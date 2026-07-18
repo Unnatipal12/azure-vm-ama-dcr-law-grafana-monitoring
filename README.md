@@ -569,6 +569,19 @@ Optional Recent Windows Events
 ---
 
 
+### Key Learnings
+
+- Azure Monitor Agent is used to collect guest OS data from Azure VMs.
+- AMA requires a Data Collection Rule to know what data to collect and where to send it.
+- Log Analytics Workspace stores VM monitoring data such as Heartbeat, Event, and Perf.
+- KQL is used to validate and analyze collected monitoring data.
+- Azure Monitor Alerts can detect missing heartbeat or other log-based conditions.
+- Action Groups are used to send alert notifications.
+- Grafana can visualize Azure Monitor Logs using KQL queries.
+- Performance Counters must be sent to Log Analytics Workspace if we want to query them in the Perf table.
+- Azure Monitor Metrics and Log Analytics Workspace are different monitoring destinations.
+
+
 # Conclusion
 
 This project successfully demonstrates an end-to-end Azure VM monitoring solution using Azure Monitor Agent, Data Collection Rules, Log Analytics Workspace, Azure Monitor Alerts, Action Groups, and Grafana dashboards.
